@@ -1,6 +1,6 @@
 <?php
-//honoka -> 1426222753
-//mayuri -> 1651805211
+//hnk -> 1426222753
+//myr -> 1651805211
 date_default_timezone_set('Asia/Tokyo');
 
 class GetImageFromInsta{
@@ -25,7 +25,7 @@ class GetImageFromInsta{
       $vidFilename = basename($videoURL);
 
       $viddata = file_get_contents($videoURL);
-      file_put_contents("/home/myr523/Videos/instagram/{$vidFilename}",$viddata, FILE_APPEND | LOCK_EX);
+      file_put_contents("/home/myr523/Videos/instagram/{$vidFilename}",$viddata, FILE_APPEND | LOCK_EX);	//保存ディレクトリ指定
       echo "video successfully saved /home/myr523/Videos/instagram/{$vidFilename}\n";
     }
 
@@ -37,7 +37,7 @@ class GetImageFromInsta{
     $picFilename = basename($picURL);
 
     $picdata = file_get_contents($picURL);
-    file_put_contents("/home/myr523/Pictures/instagram/{$picFilename}",$picdata, FILE_APPEND | LOCK_EX);
+    file_put_contents("/home/myr523/Pictures/instagram/{$picFilename}",$picdata, FILE_APPEND | LOCK_EX);	//保存ディレクトリ指定
     echo "image successfully saved /home/myr523/Pictures/instagram/{$picFilename}\n";
     echo "Done.";
   }
