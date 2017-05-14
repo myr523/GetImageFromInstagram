@@ -5,4 +5,4 @@ Instagramから画像/動画をダウンロードするスクリプト
 
 ## usage
 
-`./getImageFromInsta.php https://www.instagram.com/p/BTLE3Z3A-Zr/`
+`php getImageFromInsta.php https://www.instagram.com/p/BTLE3Z3A-Zr/`
